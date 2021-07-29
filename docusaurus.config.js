@@ -8,8 +8,8 @@ module.exports = {
   url: "https://onyo.github.io",
   baseUrl: "/documentacao/",
   trailingSlash: false,
-  onBrokenLinks: "error",
-  onBrokenMarkdownLinks: "error",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
   favicon: "img/favicon.ico",
   organizationName: "Pede Pronto", // Usually your GitHub org/user name.
   projectName: "documentacao", // Usually your repo name.
@@ -89,12 +89,6 @@ module.exports = {
           routeBasePath: "/", // Jogando pra home de docs
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://onyo.github.io/documentacao",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
