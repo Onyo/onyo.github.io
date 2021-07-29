@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #28a745;  /* #25c2a0; */
+  --ifm-color-primary: #28a745; /* #25c2a0; */
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -21,13 +21,13 @@
   --ifm-menu-color-hover: #28a745;
   --ifm-menu-color-background-hover: transparent;
 
-  --ifm-font-family-base: "Nunito Sans", -apple-system, "San Francisco", blinkmacsystemfont, "Segoe UI", "Helvetica Neue", helvetica, arial, sans-serif;
+  --ifm-font-family-base: "Nunito Sans", -apple-system, "San Francisco",
+    blinkmacsystemfont, "Segoe UI", "Helvetica Neue", helvetica, arial,
+    sans-serif;
 
-  --ifm-color-info: #7BD1F4;
-  --ifm-color-warning: #FAC942;
+  --ifm-color-info: #7bd1f4;
+  --ifm-color-warning: #fac942;
   --ifm-navbar-search-input-background-color: transparent;
-
-
 }
 
 .docusaurus-highlight-code-line {
@@ -37,18 +37,17 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-
 /* Markdown customizations */
 
 .markdown > table {
   border-top: 3px solid #00ac4a;
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 4%), 0px 3px 8px rgb(0 0 0 / 4%), 0px 0px 8px rgb(0 0 0 / 4%);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 4%), 0px 3px 8px rgb(0 0 0 / 4%),
+    0px 0px 8px rgb(0 0 0 / 4%);
   border-collapse: separate !important;
   border-spacing: 0;
   border-radius: 4px;
   display: inline-table;
 }
-
 
 /* Admonition alerts customizations */
 
@@ -68,23 +67,19 @@
   margin-right: 0.5em;
 }
 
-.admonition-icon svg{
-  fill:var(--ifm-alert-background-color);
+.admonition-icon svg {
+  fill: var(--ifm-alert-background-color);
 }
 
 .admonition h5 {
-  text-transform: capitalize
+  text-transform: capitalize;
 }
-
-
-/* Raio PicPay-zador */ 
-
-
 
 .navbar__search-input {
   -webkit-appearance: none;
   appearance: none;
-  background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
+  background: var(--ifm-navbar-search-input-background-color)
+    var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
   border-radius: 0.2rem;
   border: 1px solid rgba(0, 0, 0, 0.23);
   cursor: text;
@@ -120,7 +115,7 @@
 /* Side menu customizations */
 
 .menu {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .menu .menu__link.menu__link--active:not(.menu__link--sublist) {
@@ -129,7 +124,6 @@
   color: #222222;
   background-color: transparent;
 }
-
 
 .menu .menu__link:active {
   color: #ffffff;
@@ -148,7 +142,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  transition: background-size .5s, color 450ms;
+  transition: background-size 0.5s, color 450ms;
 }
 
 .footer__title {
@@ -157,18 +151,15 @@
 
 /* ajustes do swagger */
 
-
-
-
 .swagger-ui table tr:nth-child(2n) {
   background-color: transparent;
 }
 
-.swagger-ui table  {
+.swagger-ui table {
   border-color: transparent;
 }
 
-.swagger-ui table tr  {
+.swagger-ui table tr {
   border-top: transparent;
 }
 
@@ -185,11 +176,13 @@
   color: var(--ifm-font-color-base) !important;
 }
 
-.swagger-ui h1, h2, h3, h4, .model-title {
+.swagger-ui h1,
+h2,
+h3,
+h4,
+.model-title {
   color: var(--ifm-font-color-base) !important;
 }
-
-
 
 .swagger-ui p {
   background-color: transparent;
@@ -219,7 +212,6 @@
 }
 
 .swagger-ui .responses-table {
-
 }
 
 .swagger-ui .opblock .opblock-summary-path {
@@ -227,4 +219,3 @@
 }
 
 /* ajustes do swagger - fim */
-

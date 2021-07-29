@@ -51,8 +51,6 @@ de querystring.
 | cpf       | String (somente nº) | S             | 7887878766         |
 | name      | String              | S             | Washington Silva   |
 
-**Passo 3:** O PicPay devolve o QR Code no retorno da chamada da API de pagamentos (URL para redirecionamento em paymentUrl e imagem codificada em qrcode.base64);
-
 ### Exemplo chamada de autenticação (curl):
 
 ```json

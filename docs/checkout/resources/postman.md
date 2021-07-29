@@ -1,7 +1,7 @@
 ---
 id: postman
 title: Postman Collection
-description: Collection do Postman para geração de QRCode com PicPay
+description: Pede Pronto
 hide_table_of_contents: false
 ---
 
