@@ -8,12 +8,27 @@ module.exports = {
   url: "https://onyo.github.io",
   baseUrl: "/documentacao/",
   trailingSlash: false,
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: "error",
+  onBrokenMarkdownLinks: "error",
   favicon: "img/favicon.ico",
-  organizationName: "Onyo", // Usually your GitHub org/user name.
+  organizationName: "Pede Pronto", // Usually your GitHub org/user name.
   projectName: "documentacao", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+      switchConfig: {
+        darkIcon: "🌙",
+        lightIcon: "\u2600",
+        darkIconStyle: {
+          marginLeft: "2px",
+        },
+        lightIconStyle: {
+          marginLeft: "1px",
+        },
+      },
+    },
     navbar: {
       title: "Pede Pronto",
       logo: {
@@ -22,14 +37,7 @@ module.exports = {
       },
       items: [
         {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "Tutorial",
-        },
-        { to: "/blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/",
           label: "GitHub",
           position: "right",
         },
@@ -51,16 +59,8 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://twitter.com/alelobrasil",
             },
           ],
         },
@@ -68,17 +68,13 @@ module.exports = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Pede Pronto.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -90,10 +86,9 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          routeBasePath: "/", // Jogando pra home de docs
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://onyo.github.io/documentacao",
         },
         blog: {
           showReadingTime: true,
