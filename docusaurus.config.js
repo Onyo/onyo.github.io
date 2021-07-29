@@ -30,10 +30,10 @@ module.exports = {
       },
     },
     navbar: {
-      title: "Pede Pronto",
+      // title: "Pede Pronto",
       logo: {
         alt: "Pede Pronto Logo",
-        src: "img/logo.svg",
+        src: "img/logo-pede-pronto.png",
       },
       items: [
         {
@@ -102,4 +102,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: [[require.resolve("docusaurus-lunr-search"), { languages: ["pt"] }]],
 };

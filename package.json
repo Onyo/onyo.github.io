@@ -20,10 +20,14 @@
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
+    "isomorphic-form-data": "^2.0.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "url-loader": "^4.1.1"
+    "swagger-ui-react": "^4.0.0-beta.1",
+    "url-loader": "^4.1.1",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-alpha.70",
+    "docusaurus-lunr-search": "^2.1.10"
   },
   "browserslist": {
     "production": [
