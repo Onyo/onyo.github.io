@@ -9,7 +9,7 @@ hide_title: true
 ## Sobre este guia
 
 Neste guia vamos descrever o passo-a-passo para integração de uma WebView com sua plataforma. Para tal, é
-necessário seguir um fluxo que visa proteger ambas as partes de agentes maliciosos.
+necessário seguir um fluxo que visa proteger ambas as partes de agentes maliciosos..
 
 ## Como funciona?
 
