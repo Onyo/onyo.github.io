@@ -8,10 +8,10 @@ module.exports = {
   url: "https://onyo.github.io",
   baseUrl: "/documentacao/",
   trailingSlash: false,
-  onBrokenLinks: "error",
-  onBrokenMarkdownLinks: "error",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "Pede Pronto", // Usually your GitHub org/user name.
+  organizationName: "Onyo", // Usually your GitHub org/user name.
   projectName: "documentacao", // Usually your repo name.
   themeConfig: {
     colorMode: {
