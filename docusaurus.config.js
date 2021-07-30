@@ -8,8 +8,8 @@ module.exports = {
   url: "https://onyo.github.io",
   baseUrl: "/documentacao/",
   trailingSlash: false,
-  onBrokenLinks: "ignore",
-  onBrokenMarkdownLinks: "ignore",
+  onBrokenLinks: "error",
+  onBrokenMarkdownLinks: "error",
   favicon: "img/favicon.ico",
   organizationName: "Pede Pronto", // Usually your GitHub org/user name.
   projectName: "documentacao", // Usually your repo name.
@@ -48,12 +48,7 @@ module.exports = {
       links: [
         {
           title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
+          items: [],
         },
         {
           title: "Community",
@@ -96,5 +91,4 @@ module.exports = {
       },
     ],
   ],
-  plugins: [[require.resolve("docusaurus-lunr-search"), { languages: ["pt"] }]],
 };
