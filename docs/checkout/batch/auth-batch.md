@@ -12,7 +12,7 @@ hide_title: true
 
 ## Se não tiver uma conta cadastrada?
 
-- Se ainda não tiver cadastro, deve enviar um email para <engenharia@pedepronto.com.br> com informações da Rede.
+- Se ainda não tiver cadastro, por favor, envie um email para <engenharia@pedepronto.com.br> com informações da rede.
 
 
 ## Ambientes:
