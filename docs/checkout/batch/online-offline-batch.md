@@ -87,7 +87,8 @@ curl --request POST \
 
 ### Unauthorized
 
-Ação de não autorização para o **accessToken** não permitido pode ocorrer os seguintes erros:
+Quando não autorizado o **accessToken** pode ocorrer os seguintes erros:
+
 
 | **erro** |  **motivo** 
 | --------- |  ------------------ |
@@ -105,7 +106,7 @@ Ação de não autorização para o **accessToken** não permitido pode ocorrer 
       }
   ],
   "data": {
-    "companyWeekdayTimeRulesBatch": null
+    "companiesUpdateOnlineOfflineBatch": null
   }
 }
 ```

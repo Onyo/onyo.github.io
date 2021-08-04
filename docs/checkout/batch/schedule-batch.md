@@ -92,12 +92,13 @@ curl --request POST \
 
 ### Unauthorized
 
-Ação de não autorização para o **accessToken** não permitido pode ocorrer os seguintes erros:
+Quando não autorizado o **accessToken** pode ocorrer os seguintes erros:
+
 
 | **erro** |  **motivo** 
 | --------- |  ------------------ |
-| onyo_graphql.unauthorized     | quando a **brandId** não é autorizada. 
-| onyo_graphql.company_weekday_time_rules_batch_service_unauthorized     | quando a **CompanyId** não é autorizada. 
+| onyo_graphql.unauthorized     | A **brandId** não é autorizada. 
+| onyo_graphql.batch_service_company_unauthorized     | A **CompanyId** não é autorizada. 
 
 
 #### Exemplo:
