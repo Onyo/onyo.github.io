@@ -11,16 +11,5 @@ module.exports = {
       label: "Guias",
       items: ["checkout/guides/webview-integration"],
     },
-    {
-      type: "category",
-      label: "Plugins e plataformas",
-      items: ["checkout/plugins/vtex"],
-    },
-
-    {
-      type: "category",
-      label: "Recursos",
-      items: ["checkout/resources/postman", "checkout/resources/faq"],
-    },
   ],
 };
