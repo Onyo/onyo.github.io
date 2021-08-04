@@ -1,14 +1,15 @@
 ---
 id: online-offline-batch
-title: Ativar e Desativar Loja em Lote para Rede
+title: Ativar e Desativar lojas em lote para Rede
 hide_title: true
 ---
 
-## Ativar e Desativar Loja em Lote para Rede
+## Ativar e Desativar lojas em lote
 
 ### Como funciona?
 
-- Esta chamada serve para ativar e desativar lojas em determinada Rede.
+- Esta chamada tem como objetivo ativar e desativar lojas de uma determinada rede.
+
 
 ## Ambientes:
 
@@ -92,7 +93,7 @@ Quando não autorizado o **accessToken** pode ocorrer os seguintes erros:
 
 | **erro** |  **motivo** 
 | --------- |  ------------------ |
-| onyo_graphql.unauthorized     | quando a **brandId** não é autorizada. 
+| onyo_graphql.unauthorized     | quando o usuário não tem acesso a **brand** (ou marca)  
 | onyo_graphql.batch_service_company_unauthorized     | quando a **CompanyId** não é autorizada. 
 
 

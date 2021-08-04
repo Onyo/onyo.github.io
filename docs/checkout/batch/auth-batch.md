@@ -1,19 +1,18 @@
 ---
 id: auth-batch
-title: Chamada de Autenticação para Rede
+title: Autenticação para Rede
 hide_title: true
 ---
 
-# Chamada de Autenticação para Rede
+# Autenticação
 
 ## Como funciona?
 
-- Essa chamada serve para gerar um token de acesso para o usuário do CRM (Customer Relationship Management).
+- Essa chamada tem como intuito gerar um token de acesso para um usuário administrador da rede (ou grupo de lojas).
 
 ## Se não tiver uma conta cadastrada?
 
 - Se ainda não tiver cadastro, deve enviar um email para <engenharia@pedepronto.com.br> com informações da Rede.
-
 
 
 ## Ambientes:
@@ -53,7 +52,7 @@ https://graphql.onyo.com/graphql
 }
 ```
 
-#### exemplo (curl):
+#### Exemplo (curl):
 
 ```json
 curl --request POST \
