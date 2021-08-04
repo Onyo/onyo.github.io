@@ -3,6 +3,7 @@ id: menu-batch
 title: Criar Cardápio em Lote para Rede
 hide_title: true
 ---
+
 ## Criar Cardápio em Lote para Rede
 
 ### Como funciona?
@@ -106,7 +107,7 @@ mutation {
 
 ```json
 curl --request POST \
-  --url http://localhost:5000/graphql \
+  --url https://graphql.staging.onyo.com/graphql \
   --header 'Authorization: Bearer eyJ0eXAi...' \
   --header 'Content-Type: application/json' \
   --data '{"query":"mutation {\n  createMenuBatch(brandId: 1, companiesIds: [1, 2, 3], \n    menu: [\n      {\n        productName: \"lorem\", \n        productPosName: \"lorem\", \n        productPosReference: \"lorem\", \n        productOperator: \"sum\", \n        productSequence: 1, \n        productShortDescription: \"lorem\", \n        productFullDescription: \"lorem\", \n        productCategoryId: 8388,\n        productCategoryName: \"outra lorem\", \n        productCompanyPrice: 25.5, \n        productCompanyPosPrice: 25.5, \n        choosables: [\n          {\n            productMinimumChoices: 0, \n            productMaximumChoices: 1, \n            productName: \"lorem\", \n            productPosName: \"lorem\", \n            productPosReference: \"lorem\", \n            productOperator: \"sum\", \n            productSequence: 1, \n            productCompanyPrice: 0, \n            productCompanyPosPrice: 0\n            simples: [\n              {\n                productMinimumChoices: 0, \n                productMaximumChoices: 1, \n                productName: \"lorem\", \n                productPosName: \"lorem\", \n                productPosReference: \"lorem\", \n                productOperator: \"sum\", \n                productSequence: 1, \n                productCompanyPrice: 0, \n                productCompanyPosPrice: 0\n              }\n            ]\n          },\n        ]\n      },\n      \n    ]) {\n    success\n  }\n}\n\n"}'
