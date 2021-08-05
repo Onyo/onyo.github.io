@@ -6,7 +6,7 @@ module.exports = {
   title: "Pede Pronto",
   tagline: "Documentação online",
   url: "https://onyo.github.io",
-  baseUrl: "/documentacao/",
+  baseUrl: "/",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -83,7 +83,7 @@ module.exports = {
         docs: {
           routeBasePath: "/", // Jogando pra home de docs
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://onyo.github.io/documentacao",
+          editUrl: "https://pedepronto.github.io",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
