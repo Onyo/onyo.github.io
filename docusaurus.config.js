@@ -5,13 +5,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "Pede Pronto",
   tagline: "Documentação online",
-  url: "https://pedepronto.github.io",
+  url: "https://onyo.github.io",
   baseUrl: "/",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "pedepronto", // Usually your GitHub org/user name.
+  organizationName: "Onyo", // Usually your GitHub org/user name.
   projectName: "documentacao", // Usually your repo name.
   themeConfig: {
     colorMode: {
