@@ -17,4 +17,4 @@ tempo nas filas e faz seu pedido com rapidez e segurança.
 
 ## Obtendo ajuda
 
-Esperamos ter ajudado com este artigo! Caso tenha restado alguma dúvida, você pode consultar o nosso FAQ ou entrar em contato através do e-mail teste@pedepronto.com.br
+Esperamos ter ajudado com este artigo! Caso tenha restado alguma dúvida, você pode consultar o nosso FAQ ou entrar em contato com um de nossos colaboradores.

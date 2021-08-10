@@ -13,8 +13,13 @@ module.exports = {
     },
     {
       type: "category",
-      label: "API Reference",
+      label: "API para gestão de lojas",
       items: ["checkout/batch/auth-batch", "checkout/batch/schedule-batch", "checkout/batch/online-offline-batch", "checkout/batch/menu-batch"],
+    },
+    {
+      type: "category",
+      label: "API para gestão de pedidos",
+      items: ["checkout/orders/authentication_orders", "checkout/orders/manage_orders"],
     },
   ],
 };
