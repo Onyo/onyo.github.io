@@ -1,6 +1,6 @@
 ---
 id: menu-batch
-title: Criar Cardápio em Lote para Rede
+title: Criação de Cardápio em Lote para Rede
 hide_title: true
 ---
 
@@ -83,7 +83,7 @@ mutation {
 
 ``` 
 
-| **campo** | **tipo**            | **requerido** | **exemplo**        |
+| **Campo** | **Tipo**            | **Requerido** | **Exemplo**        |
 | --------- | ------------------- | ------------- | ------------------ |
 | productName     | String              | S             | Pão de Cenoura |
 | productPosName     | String   | N             | Pão de Cenoura        |
