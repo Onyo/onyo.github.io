@@ -8,13 +8,13 @@ hide_title: true
 
 ### Como funciona?
 
-Todas as requisições abaixo devem ser autenticadas. A autenticação deve ser fornecida através do envio do token da brand/company através do header HTTP Authorization.
+Todas as requisições abaixo requerem autenticação. A autenticação deve ser fornecida através do envio do token da brand/company através do header HTTP Authorization.
 
 O token da brand/company pode ser fornecido diretamente pela Pede Pronto, usando o modelo JWT de autenticação.
 
 **Resumo**
 
-O Pede Pronto disponibiliza o e-mail na listagem de pedidos, o PDV interpreta os dados, se ok prosegue alterando o status para o ID 4 (pos-accepted) ou ID 5 (pos-denied).
+O Pede Pronto disponibiliza o e-mail na listagem de pedidos, o PDV interpreta os dados. Se tudo estiver correto,  prosegue alterando o status para o ID 4 (pos-accepted) ou ID 5 (pos-denied).
 
 ### Listagem de pedidos (order-list)
 
@@ -527,7 +527,7 @@ Qssw5c' \
   --header 'Content-Type: application/json'
 ```
 
-Essa chamada retorna o JSON do pedido informado na URL. A resposta dessa chamada é o mesmo conteúdo da lista de itens da chamada de listagem de pedidos, porém apenas com o objeto do pedido solicitado na URL. 
+Essa chamada retorna o JSON do pedido informado na URL. A resposta dessa chamada tem o mesmo conteúdo da lista de itens da chamada de listagem de pedidos, porém apenas com o objeto do pedido solicitado na URL. 
 
 ### Atualização de pedido (order-patch)
 
