@@ -59,6 +59,39 @@ Exemplo de URL (filtrando por pedidos aprovados e negados pelo PDV que tenham si
 | 9 | room-service | Um pedido a ser entregue no local informado considerando algumas opções restritivas, como por exemplo um prédio comercial |
 
 
+** Status disponíveis para alteração **
+
+Um status não pode retroceder, a não ser para 0 (Cancelled) ou 5 (POS_DENIED).
+
+**Exemplo correto:** ```1 (backend-received) > 2 (payment-authorized) > 3 (pos-received) > 4 (pos-accepted) > 6 (read) > 7 (dispatched) ```
+
+**Exemplo inválido:** ``` 1 (backend-received) > 2 (payment-authorized) > 3 (pos-received) > 4 (pos-accepted) > 3 (pos-received) ```
+
+| **ID** | **Código (Inteiro)** | **Descrição** |
+| ------ | -------------------- | ------------- |
+| 0 |canceled |Cancelado devido ao pagamento ter sido negado ou cancelado manualmente pela Pede Pronto |
+| 1 | backend-received | Aguardando processamento do pagamento |
+| 2 | payment-authorized | Pagamento aprovado, aguardando processamento pelo PDV |
+| 3 | pos-received | Recebido pelo PDV, aguardando confirmação |
+| 4 | pos-accepted | Aceito pelo PDV |
+| 5 | pos-denied | Negado pelo PDV |
+| 6 | ready | Pedido pronto para ser recebido pelo consumidor (informado pela loja) |
+| 7 | dispatched | Saiu para entrega (delivery) |
+| 8 | delivered | Entregue para o consumidor|
+| 9 | received | Recebido pelo consumidor (informado pelo próprio consumidor) |
+| 13 | preparing | Pedido sendo preparado pela loja |
+| 15 | product-unavailable | Preparo do pedido pausado devido a indisponibilidade de algum produto. Aguardando decisão do consumidor |
+| 16 | customer-action-needed | Preparo do pedido pausado devido a uma dúvida do Staff da loja. Aguardando informação do consumidor |
+
+
+**Status não aplicáveis para integrações deste manual**
+
+| **ID** | **Código (Inteiro)** | **Descrição** |
+| ------ | -------------------- | ------------- |
+| 10 |consumed | Consumido pelo cliente | (Descontinuado)|
+| 11 | pos-imported | Importado pelo sistema de PDV |
+| 12 | pos-import-error | Não importado pelo sistema de PDV |
+| 14 | pos-analysing | Em análise pelo sistema de PDV |
 
 
 #### Campos Extras:
@@ -543,42 +576,6 @@ Exemplo de payload de aprovação de pedido:
     "status": 4
 }
 ```
-
-** Status disponíveis para alteração **
-
-Um status não pode retroceder, a não ser para 0 (Cancelled) ou 5 (POS_DENIED).
-
-**Exemplo correto:** ```1 (backend-received) > 2 (payment-authorized) > 3 (pos-received) > 4 (pos-accepted) > 6 (read) > 7 (dispatched) ```
-
-**Exemplo inválido:** ``` 1 (backend-received) > 2 (payment-authorized) > 3 (pos-received) > 4 (pos-accepted) > 3 (pos-received) ```
-
-| **ID** | **Código (Inteiro)** | **Descrição** |
-| ------ | -------------------- | ------------- |
-| 0 |canceled |Cancelado devido ao pagamento ter sido negado ou cancelado manualmente pela Pede Pronto |
-| 1 | backend-received | Aguardando processamento do pagamento |
-| 2 | payment-authorized | Pagamento aprovado, aguardando processamento pelo PDV |
-| 3 | pos-received | Recebido pelo PDV, aguardando confirmação |
-| 4 | pos-accepted | Aceito pelo PDV |
-| 5 | pos-denied | Negado pelo PDV |
-| 6 | ready | Pedido pronto para ser recebido pelo consumidor (informado pela loja) |
-| 7 | dispatched | Saiu para entrega (delivery) |
-| 8 | delivered | Entregue para o consumidor|
-| 9 | received | Recebido pelo consumidor (informado pelo próprio consumidor) |
-| 13 | preparing | Pedido sendo preparado pela loja |
-| 15 | product-unavailable | Preparo do pedido pausado devido a indisponibilidade de algum produto. Aguardando decisão do consumidor |
-| 16 | customer-action-needed | Preparo do pedido pausado devido a uma dúvida do Staff da loja. Aguardando informação do consumidor |
-
-
-**Status não aplicáveis para integrações deste manual**
-
-| **ID** | **Código (Inteiro)** | **Descrição** |
-| ------ | -------------------- | ------------- |
-| 10 |consumed | Consumido pelo cliente | (Descontinuado)|
-| 11 | pos-imported | Importado pelo sistema de PDV |
-| 12 | pos-import-error | Não importado pelo sistema de PDV |
-| 14 | pos-analysing | Em análise pelo sistema de PDV |
-
-
 
 Exemplo de payload de reprovação de pedido:
 
