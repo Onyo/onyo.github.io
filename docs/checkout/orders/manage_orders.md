@@ -4,7 +4,7 @@ title: Fluxo de gerenciamento de pedidos
 hide_title: true
 ---
 
-## Autenticação para transações de pedidos
+## Fluxo de gerenciamento de pedidos
 
 ### Como funciona?
 
