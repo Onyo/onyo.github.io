@@ -11,7 +11,7 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "Onyo", // Usually your GitHub org/user name.
+  organizationName: "onyo", // Usually your GitHub org/user name.
   projectName: "onyo.github.io", // Usually your repo name.
   themeConfig: {
     colorMode: {
@@ -83,7 +83,7 @@ module.exports = {
         docs: {
           routeBasePath: "/", // Jogando pra home de docs
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://pedepronto.github.io",
+          editUrl: "https://onyo.github.io",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
