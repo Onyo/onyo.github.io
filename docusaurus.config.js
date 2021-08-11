@@ -12,7 +12,7 @@ module.exports = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "Onyo", // Usually your GitHub org/user name.
-  projectName: "documentacao", // Usually your repo name.
+  projectName: "onyo.github.io", // Usually your repo name.
   themeConfig: {
     colorMode: {
       defaultMode: "light",
