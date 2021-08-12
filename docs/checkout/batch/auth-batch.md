@@ -86,3 +86,72 @@ curl --request POST \
 }
 ```
 
+### Analisar a rede (ou grupo de lojas):
+
+Com essa query é possível visualizar a situação da rede ou grupo de lojas.
+
+| **Campo** | **Campos**            |  
+| --------- | ------------------- | 
+| allowedCompanies |  name, numericalId, unavailable |
+| allowedBrands | name, numerical
+
+
+#### Exemplo de query graphql:
+```bash
+{
+  crmUser {
+    allowedCompanies {
+      numericalId
+      unavailable
+      name
+      
+    }
+    allowedBrands {
+      numericalId
+      name
+    }
+  }
+}
+```
+#### retorno:
+
+```json
+{
+  "data": {
+    "crmUser": {
+      "allowedCompanies": [
+        {
+          "numericalId": 737,
+          "unavailable": false,
+          "name": "10 Pastéis Pinheiros"
+        },
+        {
+          "numericalId": 811,
+          "unavailable": true,
+          "name": "Teste 2"
+        },
+        {
+          "numericalId": 3171,
+          "unavailable": true,
+          "name": "Teste do Hideki"
+        }
+      ],
+      "allowedBrands": [
+        {
+          "numericalId": 343,
+          "name": "10 Pastéis"
+        }
+      ]
+    }
+  }
+}
+```
+
+#### Exemplo (curl):
+```json
+curl --request POST \
+  --url https://graphql.staging.onyo.com/graphql \
+  --header 'Authorization: Bearer eyJ0eX...' \
+  --header 'Content-Type: application/json' \
+  --data '{"query":"{\n  crmUser {\n    allowedCompanies {\n      numericalId\n      unavailable\n      name\n      \n    }\n    allowedBrands {\n      numericalId\n      name\n    }\n  }\n}\n"}'
+```
