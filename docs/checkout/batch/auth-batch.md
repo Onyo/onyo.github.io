@@ -86,7 +86,7 @@ curl --request POST \
 }
 ```
 
-### Analisar a rede (ou grupo de lojas):
+## Consultar a rede (ou grupo de lojas):
 
 Com essa query é possível visualizar a situação da rede ou grupo de lojas.
 
