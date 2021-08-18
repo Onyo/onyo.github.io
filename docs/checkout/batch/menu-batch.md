@@ -108,9 +108,9 @@ mutation {
 ```json
 curl --request POST \
   --url https://graphql.staging.onyo.com/graphql \
-  --header 'Authorization: Bearer eyJ0eXAi...' \
+  --header 'Authorization: Bearer ...' \
   --header 'Content-Type: application/json' \
-  --data '{"query":"mutation {\n  createMenuBatch(brandId: 1, companiesIds: [1, 2, 3], \n    menu: [\n      {\n        productName: \"lorem\", \n        productPosName: \"lorem\", \n        productPosReference: \"lorem\", \n        productOperator: \"sum\", \n        productSequence: 1, \n        productShortDescription: \"lorem\", \n        productFullDescription: \"lorem\", \n        productCategoryId: 8388,\n        productCategoryName: \"outra lorem\", \n        productCompanyPrice: 25.5, \n        productCompanyPosPrice: 25.5, \n        choosables: [\n          {\n            productMinimumChoices: 0, \n            productMaximumChoices: 1, \n            productName: \"lorem\", \n            productPosName: \"lorem\", \n            productPosReference: \"lorem\", \n            productOperator: \"sum\", \n            productSequence: 1, \n            productCompanyPrice: 0, \n            productCompanyPosPrice: 0\n            simples: [\n              {\n                productMinimumChoices: 0, \n                productMaximumChoices: 1, \n                productName: \"lorem\", \n                productPosName: \"lorem\", \n                productPosReference: \"lorem\", \n                productOperator: \"sum\", \n                productSequence: 1, \n                productCompanyPrice: 0, \n                productCompanyPosPrice: 0\n              }\n            ]\n          },\n        ]\n      },\n      \n    ]) {\n    success\n  }\n}\n\n"}'
+  --data '{"query":"mutation {\n  createMenuBatch(brandId: 1, companiesIds: [1, 2, 3], \n    menu: [\n      {\n        productName: \"lorem\", \n        productPosName: \"lorem\", \n        productPosReference: \"lorem\", \n        productOperator: \"sum\", \n        productSequence: 1, \n        productShortDescription: \"lorem\", \n        productFullDescription: \"lorem\", \n        productCategoryId: 8388,\n        productCategoryName: \"lorem ddsdsd\", \n        productCompanyPrice: 25.5, \n        productCompanyPosPrice: 25.5, \n        choosables: [\n          {\n            productMinimumChoices: 0, \n            productMaximumChoices: 1, \n            productName: \"lorem\", \n            productPosName: \"lorem\", \n            productPosReference: \"lorem\", \n            productOperator: \"sum\", \n            productSequence: 1, \n            productCompanyPrice: 0, \n            productCompanyPosPrice: 0\n            simples: [\n              {\n                productMinimumChoices: 0, \n                productMaximumChoices: 1, \n                productName: \"lorem\", \n                productPosName: \"lorem\", \n                productPosReference: \"lorem\", \n                productOperator: \"sum\", \n                productSequence: 1, \n                productCompanyPrice: 0, \n                productCompanyPosPrice: 0\n              },\n              {\n                productMinimumChoices: 0, \n                productMaximumChoices: 1, \n                productName: \"lorem\", \n                productPosName: \"lorem\", \n                productPosReference: \"lorem\", \n                productOperator: \"sum\", \n                productSequence: 1, \n                productCompanyPrice: 0, \n                productCompanyPosPrice: 0\n              },\n              {\n                productMinimumChoices: 0, \n                productMaximumChoices: 1, \n                productName: \"lorem\", \n                productPosName: \"lorem\", \n                productPosReference: \"lorem\", \n                productOperator: \"sum\", \n                productSequence: 1, \n                productCompanyPrice: 0, \n                productCompanyPosPrice: 0\n              }\n            ]\n          },\n        ]\n      },\n    ]) \n  {\n    menuItems {\n      numericalId\n      product {\n        numericalId\n        subproducts {\n          numericalId\n          productType\n          productCompany {\n            edges {\n              node {\n                numericalId\n              }\n            }\n          }\n          subproducts {\n            numericalId\n            productType\n          }\n        }\n      }\n    }\n  }\n}\n\n"}'
 ```
 
 ### Retornos da chamada:
@@ -121,18 +121,143 @@ curl --request POST \
 {
   "data": {
     "createMenuBatch": {
-      "success": true
-    }
-  }
-}
-```
-
-#### Erro:
-```json
-{
-  "data": {
-    "createMenuBatch": {
-      "success": false
+      "menuItems": [
+        {
+          "numericalId": 919791,
+          "product": {
+            "numericalId": 273862,
+            "subproducts": [
+              {
+                "numericalId": 273863,
+                "productType": "CHOOSABLE",
+                "productCompany": {
+                  "edges": [
+                    {
+                      "node": {
+                        "numericalId": 919796
+                      }
+                    },
+                    {
+                      "node": {
+                        "numericalId": 919795
+                      }
+                    },
+                    {
+                      "node": {
+                        "numericalId": 919794
+                      }
+                    }
+                  ]
+                },
+                "subproducts": [
+                  {
+                    "numericalId": 273866,
+                    "productType": "SIMPLE"
+                  },
+                  {
+                    "numericalId": 273865,
+                    "productType": "SIMPLE"
+                  },
+                  {
+                    "numericalId": 273864,
+                    "productType": "SIMPLE"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "numericalId": 919792,
+          "product": {
+            "numericalId": 273862,
+            "subproducts": [
+              {
+                "numericalId": 273863,
+                "productType": "CHOOSABLE",
+                "productCompany": {
+                  "edges": [
+                    {
+                      "node": {
+                        "numericalId": 919796
+                      }
+                    },
+                    {
+                      "node": {
+                        "numericalId": 919795
+                      }
+                    },
+                    {
+                      "node": {
+                        "numericalId": 919794
+                      }
+                    }
+                  ]
+                },
+                "subproducts": [
+                  {
+                    "numericalId": 273866,
+                    "productType": "SIMPLE"
+                  },
+                  {
+                    "numericalId": 273865,
+                    "productType": "SIMPLE"
+                  },
+                  {
+                    "numericalId": 273864,
+                    "productType": "SIMPLE"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "numericalId": 919793,
+          "product": {
+            "numericalId": 273862,
+            "subproducts": [
+              {
+                "numericalId": 273863,
+                "productType": "CHOOSABLE",
+                "productCompany": {
+                  "edges": [
+                    {
+                      "node": {
+                        "numericalId": 919796
+                      }
+                    },
+                    {
+                      "node": {
+                        "numericalId": 919795
+                      }
+                    },
+                    {
+                      "node": {
+                        "numericalId": 919794
+                      }
+                    }
+                  ]
+                },
+                "subproducts": [
+                  {
+                    "numericalId": 273866,
+                    "productType": "SIMPLE"
+                  },
+                  {
+                    "numericalId": 273865,
+                    "productType": "SIMPLE"
+                  },
+                  {
+                    "numericalId": 273864,
+                    "productType": "SIMPLE"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }
