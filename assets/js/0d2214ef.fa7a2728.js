@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[0],{5582:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"pede-pronto","name":"pede-pronto","count":1,"permalink":"/blog/tags/pede-pronto"}')}}]);

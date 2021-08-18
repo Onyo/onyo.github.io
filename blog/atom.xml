@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://onyo.github.io/blog</id>
+    <title>Pede Pronto Blog</title>
+    <updated>2021-03-19T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://onyo.github.io/blog"/>
+    <subtitle>Pede Pronto Blog</subtitle>
+    <icon>https://onyo.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Ola]]></title>
+        <id>Pede Pronto</id>
+        <link href="https://onyo.github.io/blog/Pede Pronto"/>
+        <updated>2021-03-19T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello]]></title>
+        <id>hello-world</id>
+        <link href="https://onyo.github.io/blog/hello-world"/>
+        <updated>2019-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2.]]></summary>
+    </entry>
+</feed>

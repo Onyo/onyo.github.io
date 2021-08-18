@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Pede Pronto Blog</title>
+        <link>https://onyo.github.io/blog</link>
+        <description>Pede Pronto Blog</description>
+        <lastBuildDate>Fri, 19 Mar 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Ola]]></title>
+            <link>https://onyo.github.io/blog/Pede Pronto</link>
+            <guid>Pede Pronto</guid>
+            <pubDate>Fri, 19 Mar 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hello]]></title>
+            <link>https://onyo.github.io/blog/hello-world</link>
+            <guid>hello-world</guid>
+            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2.]]></description>
+        </item>
+    </channel>
+</rss>
