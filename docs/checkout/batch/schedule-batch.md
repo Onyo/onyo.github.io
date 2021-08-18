@@ -53,7 +53,18 @@ mutation {
     success
   }
 }
-```                 
+```    
+
+
+| **Campo** | **Tipo**            | **Requerido** | **Exemplo**        |
+| --------- | ------------------- | ------------- | ------------- |
+| brandId     | Int             | S             | 123 |
+| schedules     | List            | S             | schedules: [{...}]  |
+| companyId     | Int              | S             | 321 |
+| schedule     | List              | S             | schedule: [{...}] |
+| day     | Int (0-1)              | S             | 0 |
+| timeFrom     | String              | S* (Suporta construção: **H** ou **H:MM** ou **H:MM:SS**) | 1:05 | 
+| timeTo     | String              | S* (Suporta construção: **H** ou **H:MM** ou **H:MM:SS**) | 1:05:35 | 
 
 #### Exemplo (curl):
 
