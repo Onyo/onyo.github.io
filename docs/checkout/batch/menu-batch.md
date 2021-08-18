@@ -77,7 +77,27 @@ mutation {
       },
       
     ]) {
-    success
+    menuItems {
+      numericalId
+      product {
+        numericalId
+        subproducts {
+          numericalId
+          productType
+          productCompany {
+            edges {
+              node {
+                numericalId
+              }
+            }
+          }
+          subproducts {
+            numericalId
+            productType
+          }
+        }
+      }
+    }
   }
 }
 
